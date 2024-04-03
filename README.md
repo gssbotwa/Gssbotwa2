@@ -1,9 +1,10 @@
 <h1 align="center">MANNO 2.0 MD</h1>
 
-<p align="center">  
-  <a href="https://telegra.ph/file/17a6fa466de89d2b0e5b7.jpg">
-   <img alt="botgsswa" height="300" src="https://github.com/Itxmanno05/MANNO-2.0">
-    
+ <p align="center">  
+  <a href="">
+    <img alt="MANNO" width="600" height="350" src="https://i.imgur.com/ppd1XA0.jpg">
+  </a>
+</p>
 <p align="center">
 <a href="https://github.com/gssbotwa"><img title="Author" src="https://img.shields.io/badge/GSS-BOTWA-black?style=for-the-badge&logo=WhatsApp"></a>
 
