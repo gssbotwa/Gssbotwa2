@@ -366,7 +366,7 @@ const reactionMessage = {
  
  m.reply(`
   - *ᴘ ɪ ɴ ɢ* - 
-  ${new Date() - *pingSt} ms* 
+  ${new Date() - pingSt} ms 
   
   - *MANNO-2.0 RUNTIME* - 
   ${runMessage}
