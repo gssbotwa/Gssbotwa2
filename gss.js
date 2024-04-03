@@ -1352,12 +1352,9 @@ case 'setppgroup':
                     fs.unlinkSync(medis)
                     m.reply(mess.success)
                 }
-                break
+                break			
 
-
-
-    // Translate the question to English
-    const translcase 'sc':
+case 'sc':
 case 'script':
 case 'scriptbot':
   if (isBan) return m.reply(mess.banned);
