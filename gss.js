@@ -123,8 +123,8 @@ const isCommand = isAsu ? body.replace(pric, '').trim().split(/ +/).shift().toLo
         const mime = (quoted.msg || quoted).mimetype || ''
         const qmsg = (quoted.msg || quoted)
         const isMedia = /image|video|sticker|audio/.test(mime)
-const isViewOnce = ["viewOnceMessageV2","viewOnceMessage"].includes(m.type)
-	const botname = "*MANNO-2.0?*";
+const isViewOnce = ["",""].includes(m.type)
+	const botname = "*MANNO-2.0*";
 	const devlopernumber = "923097045246";
         // Group
         const groupMetadata = m.isGroup ? await gss.groupMetadata(m.chat).catch(e => {}) : ''
@@ -155,7 +155,7 @@ const hours = Math.floor((uptime % (24 * 3600)) / 3600); // Calculate hours
 const minutes = Math.floor((uptime % 3600) / 60); // Calculate minutes
 const seconds = Math.floor(uptime % 60); // Calculate seconds
 //Uptime
-  const uptimeMessage = `* Manno2.0 I am alive now since ${day}d ${hours}h ${minutes}m ${seconds}s*`;
+  const uptimeMessage = `*Manno2.0 I am alive now since ${day}d ${hours}h ${minutes}m ${seconds}s*`;
   
   const runMessage = `*☀️ ${day} Day*\n *🕐 ${hours} Hour*\n *⏰ ${minutes} Minimum*\n *⏱️ ${seconds} Seconds*\n`;
   
