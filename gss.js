@@ -124,7 +124,7 @@ const isCommand = isAsu ? body.replace(pric, '').trim().split(/ +/).shift().toLo
         const qmsg = (quoted.msg || quoted)
         const isMedia = /image|video|sticker|audio/.test(mime)
 const isViewOnce = ["",""].includes(m.type)
-	const botname = "*MANNO-2.0*";
+	const botname = "MANNO-2.0";
 	const devlopernumber = "923097045246";
         // Group
         const groupMetadata = m.isGroup ? await gss.groupMetadata(m.chat).catch(e => {}) : ''
@@ -170,7 +170,7 @@ const seconds = Math.floor(uptime % 60); // Calculate seconds
 
 *⏜✩ ˻𝐈ʈͥ᥊ ϻaͣŋͫŋ̑ο̑˼²⁴⁶𓃮•:)*🖥️🧬
 
-*🫀🄼 ˻𝐈ʈͥ᥊ ϻaͣŋͫŋ̑ο̑˼²⁴⁶ ᴡᴀ ʙᴏᴛ ᴛᴇᴀᴍ* ${day}d ${hours}h ${minutes}m ${seconds}s*`;
+*🫀🄼 ˻𝐈ʈͥ᥊ ϻaͣŋͫŋ̑ο̑˼²⁴⁶ ᴡᴀ ʙᴏᴛ ᴛᴇᴀᴍ* *${day}d ${hours}h ${minutes}m ${seconds}s*`;
   
   const runMessage = `*☀️ ${day} Day*\n *🕐 ${hours} Hour*\n *⏰ ${minutes} Minimum*\n *⏱️ ${seconds} Seconds*\n`;
   
@@ -366,7 +366,7 @@ const reactionMessage = {
  
  m.reply(`
   - *ᴘ ɪ ɴ ɢ* - 
-  ${new Date() - pingSt} ms 
+  ${new Date() - *pingSt} ms* 
   
   - *MANNO-2.0 RUNTIME* - 
   ${runMessage}
@@ -1354,7 +1354,10 @@ case 'setppgroup':
                 }
                 break
 
-case 'sc':
+
+
+    // Translate the question to English
+    const translcase 'sc':
 case 'script':
 case 'scriptbot':
   if (isBan) return m.reply(mess.banned);
@@ -1423,8 +1426,8 @@ case 'akinatorstart':
     data["signature"] = signature;
     data["question"] = question;
     data["step"] = step;
-
-    // Translate the question to English
+			
+// Translate the question to English
     const translatedQuestion = await translate(question, { to: 'en' });
     imi_txt = `${translatedQuestion}\n\n`;
     imi_txt += "0 - Yes\n";
