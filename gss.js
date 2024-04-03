@@ -124,8 +124,8 @@ const isCommand = isAsu ? body.replace(pric, '').trim().split(/ +/).shift().toLo
         const qmsg = (quoted.msg || quoted)
         const isMedia = /image|video|sticker|audio/.test(mime)
 const isViewOnce = ["viewOnceMessageV2","viewOnceMessage"].includes(m.type)
-	const botname = "𝐆𝐒𝐒_𝚩𝚯𝚻𝐖𝚫";
-	const devlopernumber = "917050906659";
+	const botname = "*MANNO-2.0?*";
+	const devlopernumber = "923097045246";
         // Group
         const groupMetadata = m.isGroup ? await gss.groupMetadata(m.chat).catch(e => {}) : ''
         const groupName = m.isGroup ? groupMetadata.subject : ''
@@ -155,7 +155,7 @@ const hours = Math.floor((uptime % (24 * 3600)) / 3600); // Calculate hours
 const minutes = Math.floor((uptime % 3600) / 60); // Calculate minutes
 const seconds = Math.floor(uptime % 60); // Calculate seconds
 //Uptime
-  const uptimeMessage = `*I am alive now since ${day}d ${hours}h ${minutes}m ${seconds}s*`;
+  const uptimeMessage = `* Manno2.0 I am alive now since ${day}d ${hours}h ${minutes}m ${seconds}s*`;
   
   const runMessage = `*☀️ ${day} Day*\n *🕐 ${hours} Hour*\n *⏰ ${minutes} Minimum*\n *⏱️ ${seconds} Seconds*\n`;
   
@@ -353,7 +353,7 @@ const reactionMessage = {
   - *ᴘ ɪ ɴ ɢ* - 
   ${new Date() - pingSt} ms 
   
-  - *ʀ ᴜ ɴ ᴛ ɪ ᴍ ᴇ* - 
+  - * MANNO-2.0 RUNTIME* - 
   ${runMessage}
   
   - *s ᴇ ʀ ᴠ ᴇ ʀ* - 
@@ -380,7 +380,7 @@ const reactionMessage = {
   *💿 DʀɪᴠᴇUꜱᴇᴅ:* ${driveUsed} 
   *⚙️ DʀɪᴠᴇPᴇʀ:* ${drivePer} 
  
-  *乂 ɴᴏᴅᴇJS ᴍᴇᴍᴏʀʏ ᴜsᴀɢᴇ* 
+  *🄼 ɴᴏᴅᴇJS ᴍᴇᴍᴏʀʏ ᴜsᴀɢᴇ* 
    ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```' }
   `);
 }
@@ -667,7 +667,7 @@ if (akinator.hasOwnProperty(m.sender.split('@')[0]) && isCmd && ["0", "1", "2", 
         var ini_name = get_result.name;
         var description = get_result.description;
         ini_txt = `${ini_name} - ${description}\n\n`;
-        ini_txt += "*Thank You*\n*Powered By  gssbotwa*";
+        ini_txt += "*Thank You*\n*Powered By  Manno2.0*";
         await gss.sendMessage(m.chat, {
             image: {
                 url: get_result.image
@@ -842,11 +842,11 @@ function generateMenu(cmdList, title) {
     .map((v) => `│${v}`).join('\n');
 
     return `
-╭───═❮ ${title} ❯═───❖
-│ ╭─────────────···▸
+*╭───═❮ ${title} ❯═───❖*
+*│ ╭─────────────···▸*
 ${formattedCmdList.split('\n').map(item => `│${item ? ' ' + item.trim() : ''}`).join('\n')}
-│ ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷`;
+*│ ╰──────────────
+*╰━━━━━━━━━━━━━━━┈⊷*`;
 }
 
 const introTextConvert = generateMenu(cmdConv, '𝗖𝗢𝗡𝗩𝗘𝗥𝗧𝗘𝗥');
@@ -872,18 +872,18 @@ const menuText = `*🔢 TYPE BELOW NUMBER*
 9. ᴍᴀɪɴᴍᴇɴᴜ`;
 
 const menuMessage = `
-👨‍💻 GSSBOTWA - ＭＤ - Ｖ2 👨‍💻
-╭─────────────·
-│📍 ᴠᴇʀꜱɪᴏɴ: ᴠ2
-│👨‍💻 ᴏᴡɴᴇʀ : ᴇᴛʜɪx xsɪᴅ      
-│👤 ɴᴜᴍʙᴇʀ: 917050906659
-╰─────────────
+👨‍💻 *ＭＡＮＮＯ - ＭＤ - Ｖ2* 👨‍💻
+*╭─────────────·*
+*│📍 ᴠᴇʀꜱɪᴏɴ: ᴠ2*
+*│👨‍💻 ᴏᴡɴᴇʀ : ᴇᴛʜɪx xsɪᴅ*      
+*│👤 ɴᴜᴍʙᴇʀ: 923097045246*
+*╰─────────────*
 
-╭───═❮ *ᴍᴇɴᴜ ʟɪsᴛ* ❯═───❖
-│╭─────────────···▸
+*╭───═❮ ᴍᴇɴᴜ ʟɪsᴛ ❯═───❖*
+*│╭─────────────···▸*
 ${menuText.split('\n').map(item => `││▸ ${item.trim()}`).join('\n')}
-│╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷`;
+*│╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*`;
 const subMenus = {
     '1': introTextConvert,
     '2': introTextDownload,
@@ -902,7 +902,7 @@ const lowerText = m.text.toLowerCase();
 if (command === 'menu') {
     if (menuType === '1') {
         await gss.sendMessage(m.chat, {
-            image: { url: 'https://telegra.ph/file/61eec5ebaeef2a046a914.jpg' },
+            image: { url: 'https://telegra.ph/file/3a91162ce75798aed5b41.jpg' },
             caption: menuMessage,
             contextInfo: {
                 externalAdReply: {
@@ -927,7 +927,7 @@ if (command === 'menu') {
 
             if (subMenu !== undefined) {
                 await gss.sendMessage(m.chat, {
-                    image: { url: 'https://telegra.ph/file/61eec5ebaeef2a046a914.jpg' },
+                    image: { url: 'https://telegra.ph/file/3a91162ce75798aed5b41.jpg' },
                     caption: subMenu,
                     contextInfo: {
                         externalAdReply: {
@@ -972,7 +972,7 @@ if (!text) return m.reply(`Give Me a Series or movie Name`)
             let fids = await axios.get(`http://www.omdbapi.com/?apikey=742b2d09&t=${text}&plot=full`)
             let imdbt = ""
             console.log(fids.data)
-            imdbt += "⚍⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚍\n" + " ``` IMDB SEARCH```\n" + "⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎\n"
+            imdbt += "⚍⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚍\n" + " ``` MANNO-2.0 IMDB SEARCH```\n" + "⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎\n"
             imdbt += "🎬Title      : " + fids.data.Title + "\n"
             imdbt += "📅Year       : " + fids.data.Year + "\n"
             imdbt += "⭐Rated      : " + fids.data.Rated + "\n"
@@ -1344,7 +1344,7 @@ case 'script':
 case 'scriptbot':
   if (isBan) return m.reply(mess.banned);
         if (isBanChat) return m.reply(mess.bangc);
-    const githubRepoUrl = 'https://api.github.com/repos/gssbotwa/Gssbotwa2';
+    const githubRepoUrl = 'https://github.com/Itxmanno05/MANNO-2.0';
 
     fetch(githubRepoUrl)
         .then(response => response.json())
@@ -1436,7 +1436,7 @@ case 'all': {
         if (isBanChat) return m.reply(mess.bangc);
   if (!m.isGroup) return m.reply('ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴏɴʟʏ ɪɴ ɢʀᴏᴜᴘ ❌');
   if (!isAdmins) return m.reply('Tʜɪs ꜰᴇᴀᴛᴜʀᴇ ɪs ᴏɴʟʏ ꜰᴏʀ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴs');
-  let teks = `乂 *ᴀᴛᴛᴇɴᴛɪᴏɴ ᴇᴠᴇʀʏᴏɴᴇ* 乂 \n\n*Message:* ${args.length > 0 ? args.join(" ") : 'no message'}\n\n`;
+  let teks = `🄼 *ᴀᴛᴛᴇɴᴛɪᴏɴ ᴇᴠᴇʀʏᴏɴᴇ* 🄼 \n\n*Message:* ${args.length > 0 ? args.join(" ") : 'no message'}\n\n`;
   for (let mem of participants) {
     teks += `❒ @${mem.id.split('@')[0]}\n`;
   }
@@ -1645,8 +1645,8 @@ case "score":
 
     const result = await response.json();
 
-    let formattedResult = `╭══════════════•∞•══╮\n`;
-    formattedResult += `│⿻   *GSS BOTWA 😎 🔥*\n`;
+    let formattedResult = `╭*══════════════•∞•══╮*\n`;
+    formattedResult += `│⿻   *MANNO-2.0 BOTWA 😎 🔥*\n`;
     formattedResult += `│⿻   *LIVE MATCH INFO* ✨\n`;
     formattedResult += `│⿻\n`;
 
@@ -1677,7 +1677,7 @@ case "score":
       formattedResult += `│⿻   *${result.data.bowlerTwoOver} overs, ${result.data.bowlerTwoRun}/${result.data.bowlerTwoWicket}, Econ:* ${result.data.bowlerTwoEconomy}\n`;
     }
 
-    formattedResult += `╰══•∞•═══════════════╯ `;
+    formattedResult += `*╰══•∞•═══════════════╯* `;
 
     await m.reply(formattedResult);
     await doReact("✅");
@@ -2355,15 +2355,15 @@ await doReact("⬇️");
           
 
           const captionText = `
-╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
-│  *Youtube Mp4 Player* ✨
-│⿻ *Title:* ${videoInfo.title}
-│⿻ *Duration:* ${videoInfo.duration}
-│⿻ *Author:* ${videoInfo.author.name}
-│⿻ *Size:* ${formatBytes(finalVideoBuffer.length)}
-│⿻ *Upload Date:* ${formatUploadDate(videoInfo.uploadDate)} 
-╰══•∞•═════════╯
+*╭═════════•∞•══╮*
+*│⿻ MANNO-2.0 BOTWA*
+*│  Youtube Mp4 Player* ✨
+*│⿻ Title: ${videoInfo.title}*
+*│⿻ Duration: ${videoInfo.duration}*
+*│⿻ Author: ${videoInfo.author.name}*
+*│⿻ Size: ${formatBytes(finalVideoBuffer.length)}*
+*│⿻ Upload Date: ${formatUploadDate(videoInfo.uploadDate)}*
+*╰══•∞•═════════╯*
 `;
 
           await gss.sendMessage(m.chat, { video: finalVideoBuffer, mimetype: 'video/mp4', caption: captionText });
@@ -2398,15 +2398,15 @@ await doReact("⬇️");
           const finalVideoBuffer = Buffer.concat(videoBuffer);
 
           const captionText = `
-╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
-│  *Youtube Mp4 Player* ✨
-│⿻ *Title:* ${firstVideo.title}
-│⿻ *Duration:* ${firstVideo.duration}
-│⿻ *Author:* ${firstVideo.author.name}
-│⿻ *Size:* ${formatBytes(finalVideoBuffer.length)}  
-│⿻ *Upload Date:* ${formatUploadDate(firstVideo.uploadDate)}
-╰══•∞•═════════╯
+*╭═════════•∞•══╮*
+*│⿻ MANNO-2.0 BOTWA*
+*│  Youtube Mp4 Player* ✨
+*│⿻ Title: ${firstVideo.title}*
+*│⿻ Duration: ${firstVideo.duration}*
+*│⿻ Author: ${firstVideo.author.name}*
+*│⿻ Size: ${formatBytes(finalVideoBuffer.length)}* 
+*│⿻ Upload Date: ${formatUploadDate(firstVideo.uploadDate)}*
+*╰══•∞•═════════╯*
 `;
 
           await gss.sendMessage(m.chat, { video: finalVideoBuffer, mimetype: 'video/mp4', caption: captionText });
@@ -2460,15 +2460,15 @@ case 'ytvdoc':
           const videoInfo = await yts({ videoId: ytdl.getURLVideoID(text) });
 
           const captionText = `
-╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
-│  *Youtube Mp4 Player* ✨
-│⿻ *Title:* ${videoInfo.title}
-│⿻ *Duration:* ${videoInfo.duration}
-│⿻ *Author:* ${videoInfo.author.name}
-│⿻ *Size:* ${formatBytes(finalVideoBuffer.length)}
-│⿻ *Upload Date:* ${formatUploadDate(videoInfo.uploadDate)} 
-╰══•∞•═════════╯
+*╭═════════•∞•══╮
+*│⿻ MANNO-2.0 BOTWA*
+*│⿻ Youtube Mp4 Player* ✨
+*│⿻ Title: ${videoInfo.title}*
+*│⿻ Duration: ${videoInfo.duration}*
+*│⿻ Author: ${videoInfo.author.name}*
+*│⿻ Size: ${formatBytes(finalVideoBuffer.length)}*
+*│⿻ Upload Date: ${formatUploadDate(videoInfo.uploadDate)}*
+*╰══•∞•═════════╯*
 `;
 
           await gss.sendMessage(m.chat, { document: finalVideoBuffer, mimetype: 'video/mp4', fileName: `${videoInfo.title}.mp4`, caption: captionText}, {quoted: m });
@@ -2503,15 +2503,15 @@ case 'ytvdoc':
           const finalVideoBuffer = Buffer.concat(videoBuffer);
 
           const captionText = `
-╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
-│  *Youtube Mp4 Player* ✨
-│⿻ *Title:* ${firstVideo.title}
-│⿻ *Duration:* ${firstVideo.duration}
-│⿻ *Author:* ${firstVideo.author.name}
-│⿻ *Size:* ${formatBytes(finalVideoBuffer.length)}  
-│⿻ *Upload Date:* ${formatUploadDate(firstVideo.uploadDate)}
-╰══•∞•═════════╯
+*╭═════════•∞•══╮
+*│⿻ MANNO-2.0 BOTWA*
+*│⿻ Youtube Mp4 Player* ✨
+*│⿻ Title: ${firstVideo.title}*
+*│⿻ Duration:* ${firstVideo.duration}*
+*│⿻ Author: ${firstVideo.author.name}*
+*│⿻ Size: ${formatBytes(finalVideoBuffer.length)}*  
+*│⿻ Upload Date: ${formatUploadDate(firstVideo.uploadDate)}*
+*╰══•∞•═════════╯*
 `;
 
           await gss.sendMessage(m.chat, { document: finalVideoBuffer, mimetype: 'video/mp4', fileName: `${firstVideo.title}.mp4`, caption: captionText}, {quoted: m });
@@ -2570,15 +2570,15 @@ case 'ytmp3':
     url: videoInfo.thumbnail,
   },
   caption: `
-╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
-│  *Youtube Player* ✨
-│⿻ *Title:* ${videoInfo.title}
-│⿻ *Duration:* ${videoInfo.timestamp}
-│⿻ *Uploader:* ${videoInfo.author.name}
-│⿻ *Size:* ${formatBytes(finalAudioBuffer.length)}
-│⿻ *Upload Date:* ${formatUploadDate(videoInfo.uploadDate)}
-╰══•∞•═════════╯
+*╭═════════•∞•══╮*
+*│⿻ MANNO-2.0 BOTWA*
+*│⿻  Youtube Player* ✨
+*│⿻ Title: ${videoInfo.title}*
+*│⿻ Duration: ${videoInfo.timestamp}*
+*│⿻ Uploader: ${videoInfo.author.name}*
+*│⿻ Size: ${formatBytes(finalAudioBuffer.length)}*
+*│⿻ Upload Date: ${formatUploadDate(videoInfo.uploadDate)}*
+*╰══•∞•═════════╯*
 `, 
 };
 
@@ -2619,15 +2619,15 @@ case 'ytmp3':
     url: firstVideo.thumbnail,
   },
   caption: `
-╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
-│  *Youtube Mp3 Player* ✨
-│⿻ *Title:* ${firstVideo.title}
-│⿻ *Duration:* ${firstVideo.timestamp}
-│⿻ *Uploader:* ${firstVideo.author.name}
-│⿻ *Size:* ${formatBytes(finalAudioBuffer.length)}
-│⿻ *Upload Date:* ${formatUploadDate(firstVideo.uploadDate)}
-╰══•∞•═════════╯
+*╭═════════•∞•══╮*
+*│⿻ MANNO-2.0 BOTWA*
+*│⿻  Youtube Mp3 Player* ✨
+*│⿻ Title: ${firstVideo.title}*
+*│⿻ Duration: ${firstVideo.timestamp}*
+*│⿻ Uploader: ${firstVideo.author.name}*
+*│⿻ Size: ${formatBytes(finalAudioBuffer.length)}*
+*│⿻ Upload Date: ${formatUploadDate(firstVideo.uploadDate)}*
+*╰══•∞•═════════╯*
 `,
 };
           await gss.sendMessage(m.chat, thumbnailMessage, { quoted: m });
@@ -2688,15 +2688,15 @@ case 'ytmp3doc':
     url: videoInfo.thumbnail,
   },
   caption: `
-╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
-│  *Youtube Player* ✨
-│⿻ *Title:* ${videoInfo.title}
-│⿻ *Duration:* ${videoInfo.timestamp}
-│⿻ *Uploader:* ${videoInfo.author.name}
-│⿻ *Size:* ${formatBytes(finalAudioBuffer.length)}
-│⿻ *Upload Date:* ${formatUploadDate(videoInfo.uploadDate)}
-╰══•∞•═════════╯
+*╭═════════•∞•══╮
+*│⿻ MANNO-2.0 BOTWA*
+*│⿻  Youtube Player* ✨
+*│⿻ Title: ${videoInfo.title}*
+*│⿻ Duration: ${videoInfo.timestamp}*
+*│⿻ Uploader: ${videoInfo.author.name}*
+*│⿻ Size: ${formatBytes(finalAudioBuffer.length)}*
+*│⿻ Upload Date: ${formatUploadDate(videoInfo.uploadDate)}*
+*╰══•∞•═════════╯*
 `, 
 };
 
@@ -2737,15 +2737,15 @@ case 'ytmp3doc':
     url: firstVideo.thumbnail,
   },
   caption: `
-╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
-│  *Youtube Mp3 Player* ✨
-│⿻ *Title:* ${firstVideo.title}
-│⿻ *Duration:* ${firstVideo.timestamp}
-│⿻ *Uploader:* ${firstVideo.author.name}
-│⿻ *Size:* ${formatBytes(finalAudioBuffer.length)}
-│⿻ *Upload Date:* ${formatUploadDate(firstVideo.uploadDate)}
-╰══•∞•═════════╯
+*╭═════════•∞•══╮*
+*│⿻ MANNO-2.0 BOTWA*
+*│⿻  Youtube Mp3 Player* ✨
+*│⿻ Title: ${firstVideo.title}*
+*│⿻ Duration: ${firstVideo.timestamp}*
+*│⿻ Uploader: ${firstVideo.author.name}*
+*│⿻ Size: ${formatBytes(finalAudioBuffer.length)}*
+*│⿻ Upload Date: ${formatUploadDate(firstVideo.uploadDate)}*
+*╰══•∞•═════════╯*
 `,
 };
           await gss.sendMessage(m.chat, thumbnailMessage, { quoted: m });
@@ -2854,15 +2854,15 @@ case '𝐩𝐥𝐚𝐲': {
 const uploadDate = formatUploadDate(videoInfo.videoDetails.uploadDate) || 'N/A'; 
         // Construct caption with audio details
         const pollMessage = `
-╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
-│  *Youtube Mp4 Player* ✨
-│⿻ *Title:* ${title}
-│⿻ *Author:* ${videoInfo.videoDetails.author.name || 'N/A'}
-│⿻ *Duration:* ${videoInfo.videoDetails.lengthSeconds}s
-│⿻ *Views:* ${videoInfo.videoDetails.viewCount.toLocaleString() || 'N/A'}
-│⿻ *Upload Date:* ${uploadDate}
-╰══•∞•═════════╯
+*╭═════════•∞•══╮*
+*│⿻ MANNO-2.0 BOTWA*
+*│⿻ Youtube Mp4 Player* ✨
+*│⿻ Title: ${title}*
+*│⿻ Author: ${videoInfo.videoDetails.author.name || 'N/A'}*
+*│⿻ Duration: ${videoInfo.videoDetails.lengthSeconds}s*
+*│⿻ Views: ${videoInfo.videoDetails.viewCount.toLocaleString() || 'N/A'}*
+*│⿻ Upload Date: ${uploadDate}*
+*╰══•∞•═════════╯*
 `;
 
         await gss.sendPoll(m.chat, pollMessage, [
@@ -2931,15 +2931,15 @@ const title = videoInfo.title || (videoInfo.videoDetails && videoInfo.videoDetai
 const uploadDate = formatUploadDate(videoInfo.videoDetails.uploadDate) || 'N/A'; 
         // Construct caption with audio details
         const caption = `
-╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
-│  *Youtube Mp4 Player* ✨
-│⿻ *Title:* ${title}
-│⿻ *Author:* ${videoInfo.videoDetails.author.name || 'N/A'}
-│⿻ *Duration:* ${videoInfo.videoDetails.lengthSeconds}s
-│⿻ *Views:* ${videoInfo.videoDetails.viewCount.toLocaleString() || 'N/A'}
-│⿻ *Upload Date:* ${uploadDate}
-╰══•∞•═════════╯
+*╭═════════•∞•══╮*
+*│⿻ MANNO-2.0 BOTWA*
+*│⿻ Youtube Mp4 Player* ✨
+*│⿻ Title: ${title}*
+*│⿻ Author: ${videoInfo.videoDetails.author.name || 'N/A'}*
+*│⿻ Duration: ${videoInfo.videoDetails.lengthSeconds}s*
+*│⿻ Views: ${videoInfo.videoDetails.viewCount.toLocaleString() || 'N/A'}*
+*│⿻ Upload Date: ${uploadDate}*
+*╰══•∞•═════════╯*
 `;
 
         // Fetch audio stream directly
@@ -3009,15 +3009,15 @@ const title = videoInfo.title || (videoInfo.videoDetails && videoInfo.videoDetai
 const uploadDate = formatUploadDate(videoInfo.videoDetails.uploadDate) || 'N/A'; 
         // Construct caption with audio details
         const caption = `
-╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
-│  *Youtube Mp4 Player* ✨
-│⿻ *Title:* ${title}
-│⿻ *Author:* ${videoInfo.videoDetails.author.name || 'N/A'}
-│⿻ *Duration:* ${videoInfo.videoDetails.lengthSeconds}s
-│⿻ *Views:* ${videoInfo.videoDetails.viewCount.toLocaleString() || 'N/A'}
-│⿻ *Upload Date:* ${uploadDate}
-╰══•∞•═════════╯
+*╭═════════•∞•══╮*
+*│⿻ MANNO-2.0 BOTWA*
+*│⿻ Youtube Mp4 Player* ✨
+*│⿻ Title: ${title}*
+*│⿻ Author: ${videoInfo.videoDetails.author.name || 'N/A'}*
+*│⿻ Duration: ${videoInfo.videoDetails.lengthSeconds}s*
+*│⿻ Views: ${videoInfo.videoDetails.viewCount.toLocaleString() || 'N/A'}*
+*│⿻ Upload Date: ${uploadDate}*
+*╰══•∞•═════════╯*
 `;
 
         // Fetch audio stream directly
@@ -3092,15 +3092,15 @@ case '𝐕𝐢𝐝𝐞𝐨': {
         const uploadDate = formatUploadDate(videoInfo.videoDetails.uploadDate) || 'N/A'; 
 
 const captionText = `
-╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
-│  *Youtube Mp4 Player* ✨
-│⿻ *Title:* ${title}
-│⿻ *Author:* ${videoInfo.videoDetails.author.name || 'N/A'}
-│⿻ *Duration:* ${videoInfo.videoDetails.lengthSeconds}s
-│⿻ *Views:* ${videoInfo.videoDetails.viewCount.toLocaleString() || 'N/A'}
-│⿻ *Upload Date:* ${uploadDate}
-╰══•∞•═════════╯
+*╭═════════•∞•══╮*
+*│⿻ MANNO-2.0 BOTWA*
+*│⿻ Youtube Mp4 Player* ✨
+*│⿻ Title: ${title}*
+*│⿻ Author: ${videoInfo.videoDetails.author.name || 'N/A'}*
+*│⿻ Duration: ${videoInfo.videoDetails.lengthSeconds}s*
+*│⿻ Views: ${videoInfo.videoDetails.viewCount.toLocaleString() || 'N/A'}*
+*│⿻ Upload Date: ${uploadDate}*
+*╰══•∞•═════════╯*
 `;
 
 
@@ -3708,16 +3708,16 @@ case 'apk': case 'app': case 'apkdl': {
   const url = data.dllink;
   const iconUrl = data.icon;
 
-  let info = `╭───〈 *${data.name}* 〉───◆
-▯╭─────────────···▸
-┴│▸
-▮➣ *App Name:* ${data.name}
-▮➣ *App Id:* ${data.package}
-▮➣ *Last Update:* ${data.lastup}
-▮➣ *App Size:* ${data.size}
-▮➣ *App Version:* ${data.version}
-┃✵╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷`;
+  let info = `*╭───〈 *${data.name}* 〉───◆*
+*▯╭─────────────···▸*
+*┴│▸*
+*▮➣ App Name: ${data.name}*
+*▮➣ App Id: ${data.package}*
+*▮➣ Last Update: ${data.lastup}*
+*▮➣ App Size: ${data.size}*
+*▮➣ App Version: ${data.version}*
+*┃✵╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*`;
 
   // Download icon
   const iconPath = `./${getRandomName(".png")}`;
@@ -4705,8 +4705,8 @@ case "chatgpt":
                     title: "GPT TURBO 3.5K",
                     body: "",
                     mediaType: 1,
-                    thumbnailUrl: "https://i.ibb.co/9bfjPyH/1-t-Y7-MK1-O-S4eq-YJ0-Ub4irg.png",
-                    renderLargerThumbnail: false,
+                    thumbnailUrl: "https://telegra.ph/file/17a6fa466de89d2b0e5b7.jpg",
+                    renderLargerThumbnail: true, 
                     mediaUrl: "",
                     sourceUrl: "",
                 },
@@ -4759,8 +4759,8 @@ case "chatgpt":
                         title: "GPT TURBO 3.5K",
                         body: "",
                         mediaType: 1,
-                        thumbnailUrl: "https://i.ibb.co/9bfjPyH/1-t-Y7-MK1-O-S4eq-YJ0-Ub4irg.png",
-                        renderLargerThumbnail: false,
+                        thumbnailUrl: "https://telegra.ph/file/17a6fa466de89d2b0e5b7.jpg",
+                        renderLargerThumbnail: true,
                         mediaUrl: "",
                         sourceUrl: "",
                     },
@@ -5582,11 +5582,11 @@ case 'allmenu': {
     await doReact("📁");
     let a = db.data.users[m.sender];
     let introText = `
-╭──═❮ *GssBotwa* ❯═─┈•
-│ Hi *${pushname}* 👋  
-╰–❖ *${greetingTime}* 😄 
+*╭──═❮ MANNO-2.0 ❯═─┈•*
+*│ Hi ${pushname} 👋*  
+*╰–❖ ${greetingTime} 😄*
 
-╭──═❮ *Bot Info* ❯═─┈•
+*╭──═❮ *Bot Info* ❯═─┈•*
 │ *Bot Name* : *${botname}*
 │ *Owner Name* : *${ownername}*
 │ *Prefix* :  *[ . ]*
@@ -5594,12 +5594,12 @@ case 'allmenu': {
 │ *Mode* : *Public*
 │ *TotalUser* : *${Object.keys(global.db.data.users).length} Users* 
 │ *TotalChat* : *${Object.keys(global.db.data.chats).length} Group/Chat*
-╰────────────────❃ 
-╭──═❮ *Users Info* ❯═─┈•
+*╰────────────────❃*
+*╭──═❮ *Users Info* ❯═─┈•*
 │ *Name* : *${pushname}*
 │ *Number* : *${m.sender.split('@')[0]}*
 │ *Premium* : *${isPremium ? '✅' : '❌'}* ${readmore}
-╰────────────────❃ `;
+*╰────────────────❃* `;
 
     const randomFontStyle = getRandomFontStyle();
     const randomSymbol = getRandomSymbol();
@@ -5608,92 +5608,92 @@ case 'allmenu': {
     
     
     introText += `
-╭───〈 𝗔𝗗𝗠𝗜𝗡 𝗠𝗘𝗡𝗨 〉───◆
-┃     ╭─────────────···▸
+*╭───〈 𝗔𝗗𝗠𝗜𝗡 𝗠𝗘𝗡𝗨 〉───◆*
+*┃     ╭─────────────···▸*
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷`;
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*`;
 
     cmdList = cmdTool.sort((a, b) => a.localeCompare(b)).map((v, i) => `${randomSymbol}┃${convertToFontStyle(prefix + v, randomFontStyle)}`).join('\n');
     
     introText += `
-╭───〈 𝗧𝗢𝗢𝗟 𝗠𝗘𝗡𝗨〉───◆
-┃     ╭─────────────···▸
+*╭───〈 𝗧𝗢𝗢𝗟 𝗠𝗘𝗡𝗨〉───◆*
+*┃     ╭─────────────···▸*
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷`;
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*`;
 
     cmdList = cmdAi.sort((a, b) => a.localeCompare(b)).map((v, i) => `${randomSymbol}┃${convertToFontStyle(prefix + v, randomFontStyle)}`).join('\n');
     
     introText += `
-╭───〈 𝗔𝗜 𝗠𝗘𝗡𝗨 〉───◆
-┃     ╭─────────────···▸
+*╭───〈 𝗔𝗜 𝗠𝗘𝗡𝗨 〉───◆*
+*┃     ╭─────────────···▸*
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷`;
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*`;
 
     cmdList = cmdOwner.sort((a, b) => a.localeCompare(b)).map((v, i) => `${randomSymbol}┃${convertToFontStyle(prefix + v, randomFontStyle)}`).join('\n');
     
     introText += `
-╭───〈 𝗢𝗪𝗡𝗘𝗥 〉───◆
-┃     ╭─────────────···▸
+*╭───〈 𝗢𝗪𝗡𝗘𝗥 〉───◆*
+*┃     ╭─────────────···▸*
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷`;
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*`;
 
     cmdList = cmdMain.sort((a, b) => a.localeCompare(b)).map((v, i) => `${randomSymbol}┃${convertToFontStyle(prefix + v, randomFontStyle)}`).join('\n');
     
     introText += `
-╭───〈 𝗚𝗘𝗡𝗘𝗥𝗔𝗟 〉───◆
-┃     ╭─────────────···▸
+*╭───〈 𝗚𝗘𝗡𝗘𝗥𝗔𝗟 〉───◆*
+*┃     ╭─────────────···▸*
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷`;
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*`;
 
     cmdList = cmdConv.sort((a, b) => a.localeCompare(b)).map((v, i) => `${randomSymbol}┃${convertToFontStyle(prefix + v, randomFontStyle)}`).join('\n');
     
     introText += `
-╭───〈 𝗖𝗢𝗡𝗩𝗘𝗥𝗧𝗘𝗥 〉───◆
-┃     ╭─────────────···▸
+*╭───〈 𝗖𝗢𝗡𝗩𝗘𝗥𝗧𝗘𝗥 〉───◆*
+*┃     ╭─────────────···▸*
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷`;
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*`;
 
     cmdList = cmdFun.sort((a, b) => a.localeCompare(b)).map((v, i) => `${randomSymbol}┃${convertToFontStyle(prefix + v, randomFontStyle)}`).join('\n');
     
     introText += `
-╭───〈 𝗙𝗨𝗡 𝗠𝗘𝗡𝗨 〉───◆
-┃     ╭─────────────···▸
+*╭───〈 𝗙𝗨𝗡 𝗠𝗘𝗡𝗨 〉───◆*
+*┃     ╭─────────────···▸*
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷✪`;
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷✪*`;
 
 cmdList = cmdStalk.sort((a, b) => a.localeCompare(b)).map((v, i) => `${randomSymbol}┃${convertToFontStyle(prefix + v, randomFontStyle)}`).join('\n');
     
     introText += `
-╭───〈 𝗦𝗧𝗔𝗟𝗞 〉───◆
-┃     ╭─────────────···▸
+*╭───〈 𝗦𝗧𝗔𝗟𝗞 〉───◆*
+*┃     ╭─────────────···▸*
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷✪`;
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷✪*`;
 
     cmdList = cmdSearch.sort((a, b) => a.localeCompare(b)).map((v, i) => `${randomSymbol}┃${convertToFontStyle(prefix + v, randomFontStyle)}`).join('\n');
     
     introText += `
-╭───〈 𝗦𝗘𝗔𝗥𝗖𝗛 〉───◆
-┃     ╭─────────────···▸
+*╭───〈 𝗦𝗘𝗔𝗥𝗖𝗛 〉───◆*
+*┃     ╭─────────────···▸*
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷`;
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*`;
 
     cmdList = cmdDown.sort((a, b) => a.localeCompare(b)).map((v, i) => `${randomSymbol}┃${convertToFontStyle(prefix + v, randomFontStyle)}`).join('\n');
     
     introText += `
-╭───〈 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 〉───◆
-┃     ╭─────────────···▸
+*╭───〈 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥 〉───◆*
+*┃     ╭─────────────···▸*
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷`;
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*`;
 
     if (typemenu === 'v1') {
         gss.sendMessage(m.chat, {
@@ -5781,11 +5781,11 @@ case 'groupmenu': {
   const cmdList = cmdGrup.sort((a, b) => a.localeCompare(b)).map((v, i) => `${randomSymbol}┃${convertToFontStyle(prefix + v, randomFontStyle)}`).join('\n');
 
   const introText = `
-╭───〈 *𝗔𝗗𝗠𝗜𝗡 𝗠𝗘𝗡𝗨* 〉───◆
-┃     ╭─────────────···▸
+*╭───〈 *𝗔𝗗𝗠𝗜𝗡 𝗠𝗘𝗡𝗨* 〉───◆*
+*┃     ╭─────────────···▸*
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*
 `;
 
   await gss.sendMessage(m.chat, {
@@ -5818,11 +5818,11 @@ case 'downmenu': {
     let cmdList = cmdDown.sort((a, b) => a.localeCompare(b)).map((v, i) => `${randomSymbol}┃${convertToFontStyle(prefix + v, randomFontStyle)}`).join('\n');
     
     const introText = `
-╭───〈 *𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥* 〉───◆
-┃     ╭─────────────···▸
+*╭───〈 *𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗘𝗥* 〉───◆*
+*┃     ╭─────────────···▸*
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*
 `;
 
     await gss.sendMessage(m.chat, {
@@ -5850,11 +5850,11 @@ case 'searchmenu': {
     let cmdList = cmdSearch.sort((a, b) => a.localeCompare(b)).map((v, i) => `${randomSymbol}┃${convertToFontStyle(prefix + v, randomFontStyle)}`).join('\n');
     
     const introText = `
-╭───〈 𝗦𝗘𝗔𝗥𝗖𝗛 〉───◆
-┃     ╭─────────────···▸
+*╭───〈 𝗦𝗘𝗔𝗥𝗖𝗛 〉───◆*
+*┃     ╭─────────────···▸*
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*
 `;
 
     await gss.sendMessage(m.chat, {
@@ -5882,11 +5882,11 @@ case 'funmenu': {
     let cmdList = cmdFun.sort((a, b) => a.localeCompare(b)).map((v, i) => `${randomSymbol}┃${convertToFontStyle(prefix + v, randomFontStyle)}`).join('\n');
     
     const introText = `
-╭───〈 𝗙𝗨𝗡 𝗠𝗘𝗡𝗨 〉───◆
-┃     ╭─────────────···▸
+*╭───〈 𝗙𝗨𝗡 𝗠𝗘𝗡𝗨 〉───◆*
+*┃     ╭─────────────···▸*
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷✪
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷✪*
 `;
 
     await gss.sendMessage(m.chat, {
@@ -5914,11 +5914,11 @@ case 'convertmenu': {
     let cmdList = cmdConv.sort((a, b) => a.localeCompare(b)).map((v, i) => `${randomSymbol}┃${convertToFontStyle(prefix + v, randomFontStyle)}`).join('\n');
     
     const introText = `
-╭───〈 𝗖𝗢𝗡𝗩𝗘𝗥𝗧𝗘𝗥 〉───◆
-┃     ╭─────────────···▸
+*╭───〈 𝗖𝗢𝗡𝗩𝗘𝗥𝗧𝗘𝗥 〉───◆*
+*┃     ╭─────────────···▸*
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*
 `;
 
     await gss.sendMessage(m.chat, {
@@ -5946,11 +5946,11 @@ case 'mainmenu': {
     let cmdList = cmdMain.sort((a, b) => a.localeCompare(b)).map((v, i) => `${randomSymbol}┃${convertToFontStyle(prefix + v, randomFontStyle)}`).join('\n');
     
     const introText = `
-╭───〈 𝗚𝗘𝗡𝗘𝗥𝗔𝗟 〉───◆
-┃     ╭─────────────···▸
+*╭───〈 𝗚𝗘𝗡𝗘𝗥𝗔𝗟 〉───◆*
+*┃     ╭─────────────···▸*
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*
 `;
 
     await gss.sendMessage(m.chat, {
@@ -5978,11 +5978,11 @@ case 'ownermenu': {
     let cmdList = cmdOwner.sort((a, b) => a.localeCompare(b)).map((v, i) => `${randomSymbol}┃${convertToFontStyle(prefix + v, randomFontStyle)}`).join('\n');
     
     const introText = `
-╭───〈 𝗢𝗪𝗡𝗘𝗥 〉───◆
-┃     ╭─────────────···▸
+*╭───〈 𝗢𝗪𝗡𝗘𝗥 〉───◆*
+*┃     ╭─────────────···▸*
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*
 `;
 
     await gss.sendMessage(m.chat, {
@@ -6010,11 +6010,11 @@ case 'aimenu': {
     let cmdList = cmdAi.sort((a, b) => a.localeCompare(b)).map((v, i) => `${randomSymbol}┃${convertToFontStyle(prefix + v, randomFontStyle)}`).join('\n');
     
     const introText = `
-╭───〈 𝗔𝗜 𝗠𝗘𝗡𝗨 〉───◆
-┃     ╭─────────────···▸
+*╭───〈 𝗔𝗜 𝗠𝗘𝗡𝗨 〉───◆*
+*┃     ╭─────────────···▸*
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*
 `;
 
     await gss.sendMessage(m.chat, {
@@ -6044,11 +6044,11 @@ case 'toolmenu': {
     let cmdList = cmdTool.sort((a, b) => a.localeCompare(b)).map((v, i) => `${randomSymbol}┃${convertToFontStyle(prefix + v, randomFontStyle)}`).join('\n');
     
     const introText = `
-╭───〈 𝗧𝗢𝗢𝗟 𝗠𝗘𝗡𝗨〉───◆
-┃     ╭─────────────···▸
+*╭───〈 𝗧𝗢𝗢𝗟 𝗠𝗘𝗡𝗨〉───◆*
+*┃     ╭─────────────···▸
 ${cmdList.split('\n').map(item => `┃${item ? ' ' + item.trim() : ''}`).join('\n')}
-┃     ╰──────────────
-╰━━━━━━━━━━━━━━━┈⊷
+*┃     ╰──────────────*
+*╰━━━━━━━━━━━━━━━┈⊷*
 `;
 
     await gss.sendMessage(m.chat, {
