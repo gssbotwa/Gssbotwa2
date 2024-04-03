@@ -155,7 +155,22 @@ const hours = Math.floor((uptime % (24 * 3600)) / 3600); // Calculate hours
 const minutes = Math.floor((uptime % 3600) / 60); // Calculate minutes
 const seconds = Math.floor(uptime % 60); // Calculate seconds
 //Uptime
-  const uptimeMessage = `*Manno2.0 I am alive now since ${day}d ${hours}h ${minutes}m ${seconds}s*`;
+  const uptimeMessage = `*•┈┈••✦❀❀✦••┈┈•*
+
+*"♥✨♡ 💸🙂*
+
+           *⸙• 「「⸙」‎🌸🌍*
+
+  *_.. 𝐈𝐌 𝐁𝐨𝐓  🖥️𝐂𝐑𝐞𝐀𝐓𝐨𝐑..🂱_*
+                 *_𝐁𝐨𝐓  𝐢𝐒  𝐀𝐋𝐢𝐕𝐞  𝐒𝐢𝐍𝐜𝐄  𝟐𝟏  𝐌𝐢𝐍𝐮𝐓𝐞_*    
+                            
+      🧬📌 *_𝟑𝟎 𝐒𝐄𝐂𝐎𝐍𝐃𝐒_￣<²*    
+          *ʟᴀᴛᴇɴᴄʏ: 309 _ᴍs_*
+🔐⚠️   
+
+*⏜✩ ˻𝐈ʈͥ᥊ ϻaͣŋͫŋ̑ο̑˼²⁴⁶𓃮•:)*🖥️🧬
+
+*🫀🄼 ˻𝐈ʈͥ᥊ ϻaͣŋͫŋ̑ο̑˼²⁴⁶ ᴡᴀ ʙᴏᴛ ᴛᴇᴀᴍ* ${day}d ${hours}h ${minutes}m ${seconds}s*`;
   
   const runMessage = `*☀️ ${day} Day*\n *🕐 ${hours} Hour*\n *⏰ ${minutes} Minimum*\n *⏱️ ${seconds} Seconds*\n`;
   
@@ -353,7 +368,7 @@ const reactionMessage = {
   - *ᴘ ɪ ɴ ɢ* - 
   ${new Date() - pingSt} ms 
   
-  - * MANNO-2.0 RUNTIME* - 
+  - *MANNO-2.0 RUNTIME* - 
   ${runMessage}
   
   - *s ᴇ ʀ ᴠ ᴇ ʀ* - 
