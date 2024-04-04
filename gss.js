@@ -921,7 +921,7 @@ if (command === 'menu') {
             caption: menuMessage,
             contextInfo: {
                 externalAdReply: {
-                    showAdAttribution: false,
+                    showAdAttribution: true,
                     title: botname,
                     sourceUrl: global.link,
                     body: `Bot Created By ${global.owner}`
@@ -3724,8 +3724,8 @@ case 'apk': case 'app': case 'apkdl': {
   const iconUrl = data.icon;
 
   let info = `*╭───〈 *${data.name}* 〉───◆*
-*▯╭─────────────···▸*
-*┴│▸*
+*╭─────────────···▸*
+*│▸*
 *▮➣ App Name: ${data.name}*
 *▮➣ App Id: ${data.package}*
 *▮➣ Last Update: ${data.lastup}*
