@@ -398,7 +398,7 @@ try {
         let imageCaption = quotedMessage.imageMessage.caption;
         let imageUrl = await gss.downloadAndSaveMediaMessage(quotedMessage.imageMessage);
         gss.sendMessage(m.chat, { image: { url: imageUrl }, caption: imageCaption });
-        m.reply('*Status Download Successful: by Gss_Botwa*');
+        m.reply('*🄼 GRANTED BY MANNO-MD*');
       }
 
       // Check if it's a video
@@ -406,7 +406,7 @@ try {
         let videoCaption = quotedMessage.videoMessage.caption;
         let videoUrl = await gss.downloadAndSaveMediaMessage(quotedMessage.videoMessage);
         gss.sendMessage(m.chat, { video: { url: videoUrl }, caption: videoCaption });
-        m.reply('*Status Download Successful: by Gss_Botwa*');
+        m.reply('*🄼 GRANTED BY MANNO-MD*');
       }
     }
   }
@@ -872,11 +872,11 @@ const menuText = `*🔢 TYPE BELOW NUMBER*
 9. ᴍᴀɪɴᴍᴇɴᴜ`;
 
 const menuMessage = `
-👨‍💻 GSSBOTWA - ＭＤ - Ｖ2 👨‍💻
+👨‍💻 *ＭＡＮＮＯ-ＭＤ-Ｖ2* 👨‍💻
 ╭─────────────·
 │📍 ᴠᴇʀꜱɪᴏɴ: ᴠ2
-│👨‍💻 ᴏᴡɴᴇʀ : ᴇᴛʜɪx xsɪᴅ      
-│👤 ɴᴜᴍʙᴇʀ: 917050906659
+│👨‍💻 ᴏᴡɴᴇʀ : *⏜✩˻𝐈ʈͥ᥊ ϻaͣŋͫŋ̑ο̑˼𓃮•:)*   
+│👤 ɴᴜᴍʙᴇʀ: *+923097045246*
 ╰─────────────
 
 ╭───═❮ *ᴍᴇɴᴜ ʟɪsᴛ* ❯═───❖
@@ -902,11 +902,11 @@ const lowerText = m.text.toLowerCase();
 if (command === 'menu') {
     if (menuType === '1') {
         await gss.sendMessage(m.chat, {
-            image: { url: 'https://telegra.ph/file/61eec5ebaeef2a046a914.jpg' },
+            image: { url: 'https://telegra.ph/file/53a27b8fda9c6d7b861c8.jpg' },
             caption: menuMessage,
             contextInfo: {
                 externalAdReply: {
-                    showAdAttribution: false,
+                    showAdAttribution: true,
                     title: botname,
                     sourceUrl: global.link,
                     body: `Bot Created By ${global.owner}`
@@ -927,11 +927,11 @@ if (command === 'menu') {
 
             if (subMenu !== undefined) {
                 await gss.sendMessage(m.chat, {
-                    image: { url: 'https://telegra.ph/file/61eec5ebaeef2a046a914.jpg' },
+                    image: { url: 'https://telegra.ph/file/53a27b8fda9c6d7b861c8.jpg' },
                     caption: subMenu,
                     contextInfo: {
                         externalAdReply: {
-                            showAdAttribution: false,
+                            showAdAttribution: true,
                             title: botname,
                             sourceUrl: global.link,
                             body: `Bot Created By ${global.owner}`
@@ -972,7 +972,7 @@ if (!text) return m.reply(`Give Me a Series or movie Name`)
             let fids = await axios.get(`http://www.omdbapi.com/?apikey=742b2d09&t=${text}&plot=full`)
             let imdbt = ""
             console.log(fids.data)
-            imdbt += "⚍⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚍\n" + " ``` IMDB SEARCH```\n" + "⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎\n"
+            imdbt += "⚍⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚍\n" + " ```MANNO-2.0 IMDB SEARCH```\n" + "⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎\n"
             imdbt += "🎬Title      : " + fids.data.Title + "\n"
             imdbt += "📅Year       : " + fids.data.Year + "\n"
             imdbt += "⭐Rated      : " + fids.data.Rated + "\n"
@@ -1292,7 +1292,7 @@ const res = await fetch(`http://api.qrserver.com/v1/read-qr-code/?fileurl=${mem}
 const data = await res.json() 
 m.reply(util.format(data[0].symbol))
 } catch (err) {
-m.reply(`Reply Image That Has Qr`)
+m.reply(`*🄼 GRANTED BY MANNO-MD QR*`)
 }
 }
 break
@@ -1344,7 +1344,7 @@ case 'script':
 case 'scriptbot':
   if (isBan) return m.reply(mess.banned);
         if (isBanChat) return m.reply(mess.bangc);
-    const githubRepoUrl = 'https://api.github.com/repos/gssbotwa/Gssbotwa2';
+    const githubRepoUrl = 'https://github.com/Itxmanno05/MANNO-2.0';
 
     fetch(githubRepoUrl)
         .then(response => response.json())
@@ -1646,7 +1646,7 @@ case "score":
     const result = await response.json();
 
     let formattedResult = `╭══════════════•∞•══╮\n`;
-    formattedResult += `│⿻   *GSS BOTWA 😎 🔥*\n`;
+    formattedResult += `│⿻   *MANNO-2.0 BOTWA 😎 🔥*\n`;
     formattedResult += `│⿻   *LIVE MATCH INFO* ✨\n`;
     formattedResult += `│⿻\n`;
 
@@ -2356,7 +2356,7 @@ await doReact("⬇️");
 
           const captionText = `
 ╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
+│⿻ *MANNO-2.0 BOTWA*
 │  *Youtube Mp4 Player* ✨
 │⿻ *Title:* ${videoInfo.title}
 │⿻ *Duration:* ${videoInfo.duration}
@@ -2399,7 +2399,7 @@ await doReact("⬇️");
 
           const captionText = `
 ╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
+│⿻ *MANNO-2.0 BOTWA*
 │  *Youtube Mp4 Player* ✨
 │⿻ *Title:* ${firstVideo.title}
 │⿻ *Duration:* ${firstVideo.duration}
@@ -2461,7 +2461,7 @@ case 'ytvdoc':
 
           const captionText = `
 ╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
+│⿻ *MANNO-2.0 BOTWA*
 │  *Youtube Mp4 Player* ✨
 │⿻ *Title:* ${videoInfo.title}
 │⿻ *Duration:* ${videoInfo.duration}
@@ -2504,7 +2504,7 @@ case 'ytvdoc':
 
           const captionText = `
 ╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
+│⿻ *MANNO-2.0 BOTWA*
 │  *Youtube Mp4 Player* ✨
 │⿻ *Title:* ${firstVideo.title}
 │⿻ *Duration:* ${firstVideo.duration}
@@ -2552,7 +2552,7 @@ case 'ytmp3':
     const isUrl = ytdl.validateURL(text);
 
     if (isUrl) {
-      // If it's a URL, directly use ytdl-core
+      // If it's a URL, directly use ytdl-corei
       const audioStream = ytdl(text, { filter: 'audioonly', quality: 'highestaudio' });
       const audioBuffer = [];
 
@@ -2571,7 +2571,7 @@ case 'ytmp3':
   },
   caption: `
 ╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
+│⿻ *MANNO-2.0 BOTWA*
 │  *Youtube Player* ✨
 │⿻ *Title:* ${videoInfo.title}
 │⿻ *Duration:* ${videoInfo.timestamp}
@@ -2620,7 +2620,7 @@ case 'ytmp3':
   },
   caption: `
 ╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
+│⿻ *MANNO-2.0 BOTWA*
 │  *Youtube Mp3 Player* ✨
 │⿻ *Title:* ${firstVideo.title}
 │⿻ *Duration:* ${firstVideo.timestamp}
@@ -2689,7 +2689,7 @@ case 'ytmp3doc':
   },
   caption: `
 ╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
+│⿻ *MANNO-2.0 BOTWA*
 │  *Youtube Player* ✨
 │⿻ *Title:* ${videoInfo.title}
 │⿻ *Duration:* ${videoInfo.timestamp}
@@ -2738,7 +2738,7 @@ case 'ytmp3doc':
   },
   caption: `
 ╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
+│⿻ *MANNO-2.0 BOTWA*
 │  *Youtube Mp3 Player* ✨
 │⿻ *Title:* ${firstVideo.title}
 │⿻ *Duration:* ${firstVideo.timestamp}
@@ -2855,7 +2855,7 @@ const uploadDate = formatUploadDate(videoInfo.videoDetails.uploadDate) || 'N/A';
         // Construct caption with audio details
         const pollMessage = `
 ╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
+│⿻ *MANNO-2.0 BOTWA*
 │  *Youtube Mp4 Player* ✨
 │⿻ *Title:* ${title}
 │⿻ *Author:* ${videoInfo.videoDetails.author.name || 'N/A'}
@@ -2932,7 +2932,7 @@ const uploadDate = formatUploadDate(videoInfo.videoDetails.uploadDate) || 'N/A';
         // Construct caption with audio details
         const caption = `
 ╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
+│⿻ *MANNO-2.0 BOTWA*
 │  *Youtube Mp4 Player* ✨
 │⿻ *Title:* ${title}
 │⿻ *Author:* ${videoInfo.videoDetails.author.name || 'N/A'}
@@ -3010,7 +3010,7 @@ const uploadDate = formatUploadDate(videoInfo.videoDetails.uploadDate) || 'N/A';
         // Construct caption with audio details
         const caption = `
 ╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
+│⿻ *MANNO-2.0 BOTWA*
 │  *Youtube Mp4 Player* ✨
 │⿻ *Title:* ${title}
 │⿻ *Author:* ${videoInfo.videoDetails.author.name || 'N/A'}
@@ -3093,7 +3093,7 @@ case '𝐕𝐢𝐝𝐞𝐨': {
 
 const captionText = `
 ╭═════════•∞•══╮
-│⿻ *GSS BOTWA*
+│⿻ *MANNO-2.0 BOTWA*
 │  *Youtube Mp4 Player* ✨
 │⿻ *Title:* ${title}
 │⿻ *Author:* ${videoInfo.videoDetails.author.name || 'N/A'}
@@ -3469,7 +3469,7 @@ case 'instagram':
 case 'toanime':
   if (isBan) return m.reply(mess.banned);
   if (isBanChat) return m.reply(mess.bangc);
-  if (!quoted) return m.reply(`Where is the picture?`);
+  if (!quoted) return m.reply(`*🄼 GRANTED BY MANNO-MD*`);
   if (!/image/.test(mime)) return m.reply(`Send/Reply Photos With Captions ${prefix + command}`);
 
   m.reply(mess.wait);
@@ -3484,7 +3484,7 @@ case 'toanime':
     // Upload the image
     try {
       const image = await uploadImage(dataaa);
-      console.log('Image uploaded successfully:', image);
+      console.log('*🄼 GRANTED BY MANNO-MD*', image);
 
       // Generate anime version using Lolhuman API or Caliph API as a fallback
       try {
@@ -3709,8 +3709,8 @@ case 'apk': case 'app': case 'apkdl': {
   const iconUrl = data.icon;
 
   let info = `╭───〈 *${data.name}* 〉───◆
-▯╭─────────────···▸
-┴│▸
+╭─────────────···▸
+│▸
 ▮➣ *App Name:* ${data.name}
 ▮➣ *App Id:* ${data.package}
 ▮➣ *Last Update:* ${data.lastup}
@@ -4488,7 +4488,12 @@ case 'ping': {
         key: pingMsg.key,
         type: 14,
         editedMessage: {
-          conversation: `*Pong:* ${new Date() - startTime} ms`
+          conversation: `
+          *⸙• 「「⸙」‎🌸🖥️*                 
+             
+        *ʟᴀᴛᴇɴᴄʏ: ${new Date() - startTime}  _ᴍs_*
+                 🔐⚠️  
+    *🫀🄼 ⏜✩ ˻𝐈ʈͥ᥊ ϻaͣŋͫŋ̑ο̑˼ 𓃮•:)*`
         }
       }
     }, {});
@@ -4702,11 +4707,11 @@ case "chatgpt":
             text: data.answer,
             contextInfo: {
                 externalAdReply: {
-                    title: "GPT TURBO 3.5K",
+                    title: "GPT MANNO-2.0 3.5K",
                     body: "",
                     mediaType: 1,
-                    thumbnailUrl: "https://i.ibb.co/9bfjPyH/1-t-Y7-MK1-O-S4eq-YJ0-Ub4irg.png",
-                    renderLargerThumbnail: false,
+                    thumbnailUrl: "https://telegra.ph/file/05f8b99375cf8c851358d.jpg",
+                    renderLargerThumbnail: true,
                     mediaUrl: "",
                     sourceUrl: "",
                 },
@@ -4756,11 +4761,11 @@ case "chatgpt":
                 text: data.answer,
                 contextInfo: {
                     externalAdReply: {
-                        title: "GPT TURBO 3.5K",
+                        title: "GPT MANNO-2.0 3.5K",
                         body: "",
                         mediaType: 1,
-                        thumbnailUrl: "https://i.ibb.co/9bfjPyH/1-t-Y7-MK1-O-S4eq-YJ0-Ub4irg.png",
-                        renderLargerThumbnail: false,
+                        thumbnailUrl: "https://telegra.ph/file/05f8b99375cf8c851358d.jpg",
+                        renderLargerThumbnail: true,
                         mediaUrl: "",
                         sourceUrl: "",
                     },
@@ -5582,7 +5587,7 @@ case 'allmenu': {
     await doReact("📁");
     let a = db.data.users[m.sender];
     let introText = `
-╭──═❮ *GssBotwa* ❯═─┈•
+╭──═❮ *MANNO-2.0* ❯═─┈•
 │ Hi *${pushname}* 👋  
 ╰–❖ *${greetingTime}* 😄 
 
@@ -5590,10 +5595,6 @@ case 'allmenu': {
 │ *Bot Name* : *${botname}*
 │ *Owner Name* : *${ownername}*
 │ *Prefix* :  *[ . ]*
-│ *Uptime* : *${hours}h ${minutes}m ${seconds}s*
-│ *Mode* : *Public*
-│ *TotalUser* : *${Object.keys(global.db.data.users).length} Users* 
-│ *TotalChat* : *${Object.keys(global.db.data.chats).length} Group/Chat*
 ╰────────────────❃ 
 ╭──═❮ *Users Info* ❯═─┈•
 │ *Name* : *${pushname}*
