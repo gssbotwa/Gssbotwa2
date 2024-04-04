@@ -155,7 +155,9 @@ const hours = Math.floor((uptime % (24 * 3600)) / 3600); // Calculate hours
 const minutes = Math.floor((uptime % 3600) / 60); // Calculate minutes
 const seconds = Math.floor(uptime % 60); // Calculate seconds
 //Uptime
-  const uptimeMessage = `*I am alive now since ${day}d ${hours}h ${minutes}m ${seconds}s*`;
+  const uptimeMessage = `*   *_.. 𝐈𝐌 𝐁𝐨𝐓 🖥️𝐂𝐑𝐞𝐀𝐓𝐨𝐑..🂱_.    ⏜✩ ˻₀̄₃̄ͥ₀̄ͭ₉̄ͯ₇̄₀̄ᷟ₄̄ᷧ₅̄ᷡ₂̄ᷳ₄̄ᷳ₆̄˼ 𓃮•:)                  
+
+🌸🤭- " 𝐀 𝐅ɑkə 𝐒mıɭə 𝐂ɑη ┣𝐥ıdə  𝐌ıɭɭıoηs 𝐎f 𝐓əɑrs ||%❤😚 ${day}d ${hours}h ${minutes}m ${seconds}s*`;
   
   const runMessage = `*☀️ ${day} Day*\n *🕐 ${hours} Hour*\n *⏰ ${minutes} Minimum*\n *⏱️ ${seconds} Seconds*\n`;
   
