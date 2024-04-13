@@ -170,7 +170,7 @@ const seconds = Math.floor(uptime % 60); // Calculate seconds
 
 *⏜✩ ˻𝐈ʈͥ᥊ ϻaͣŋͫŋ̑ο̑˼²⁴⁶𓃮•:)*🖥️🧬
 
-*🫀🄼 ˻𝐈ʈͥ᥊ ϻaͣŋͫŋ̑ο̑˼²⁴⁶ ᴡᴀ ʙᴏᴛ ᴛᴇᴀᴍ* ${day}d ${hours}h ${minutes}m ${seconds}s*`;
+*🫀🄼 ˻𝐈ʈͥ᥊ ϻaͣŋͫŋ̑ο̑˼²⁴⁶ ᴡᴀ ʙᴏᴛ ᴛᴇᴀᴍ* *${day}d ${hours}h ${minutes}m ${seconds}s*`;
   
   const runMessage = `*☀️ ${day} Day*\n *🕐 ${hours} Hour*\n *⏰ ${minutes} Minimum*\n *⏱️ ${seconds} Seconds*\n`;
   
@@ -395,7 +395,7 @@ const reactionMessage = {
   *💿 DʀɪᴠᴇUꜱᴇᴅ:* ${driveUsed} 
   *⚙️ DʀɪᴠᴇPᴇʀ:* ${drivePer} 
  
-  *乂 ɴᴏᴅᴇJS ᴍᴇᴍᴏʀʏ ᴜsᴀɢᴇ* 
+  *🄼 ɴᴏᴅᴇJS ᴍᴇᴍᴏʀʏ ᴜsᴀɢᴇ* 
    ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```' }
   `);
 }
