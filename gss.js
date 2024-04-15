@@ -3454,12 +3454,12 @@ async function downloadAndSendMedia(m, text, isDocument) {
 
         
         if (isDocument) {
-            await gss.sendMessage(m.chat, { document: fileBuffer, mimetype: `video/mp4`, fileName, caption: 'Downloaded by gss botwa' }, { quoted: m });
+            await gss.sendMessage(m.chat, { document: fileBuffer, mimetype: `video/mp4`, fileName, caption: '*🄼 GRANTED-BY-THE-MANNO-2.0*' }, { quoted: m });
         } else {
             if (media.type === 'image') {
-                await gss.sendMessage(m.chat, { image: fileBuffer, mimetype: 'image/jpeg', fileName, caption: 'Downloaded by gss botwa' }, { quoted: m });
+                await gss.sendMessage(m.chat, { image: fileBuffer, mimetype: 'image/jpeg', fileName, caption: '*🄼 GRANTED-BY-THE-MANNO-2.0*' }, { quoted: m });
             } else if (media.type === 'video') {
-                await gss.sendMessage(m.chat, { video: fileBuffer, mimetype: 'video/mp4', fileName, caption: 'Downloaded by gss botwa' }, { quoted: m });
+                await gss.sendMessage(m.chat, { video: fileBuffer, mimetype: 'video/mp4', fileName, caption: '*🄼 GRANTED-BY-THE-MANNO-2.0*' }, { quoted: m });
             } else {
                 throw new Error('Unsupported media type');
             }
@@ -3974,7 +3974,7 @@ case 'mediafire': {
                 },
                 fileName: fileInfo[0].nama,
                 mimetype: fileInfo[0].mime,
-                caption: `Downloaded by gss botwa: ${fileInfo[0].nama}`,  // Add your desired caption
+                caption: `*🄼 GRANTED-BY-THE-MANNO-2.0* ${fileInfo[0].nama}`,  // Add your desired caption
             },
             { quoted: m }
         );
@@ -4049,7 +4049,7 @@ case 'fb': case 'fbdl': case 'facebook': {
      await m.reply(`Please wait...`);
     try {
         const result = await fg.fbdl(args[0]);
-        const tex = `
+        const tex =` *🄼 GRANTED-BY-THE-MANNO-2.0*
   *Video Details* 
 📽️ *Title*: ${result.title}
 `;
@@ -4125,7 +4125,7 @@ break;
  case 'gitclone':
    if (isBan) return m.reply(mess.banned);
         if (isBanChat) return m.reply(mess.bangc);
-  if (!args[0]) return m.reply(`Where is the link?\nExample :\n${prefix}${command} https://github.com/sid238/Gss_Botwa`)
+  if (!args[0]) return m.reply(`Where is the link?\nExample :\n${prefix}${command} https://github.com/Itxmanno05/MANNO-2.0`)
   if (!isUrl(args[0]) && !args[0].includes('github.com')) return m.reply(`Link invalid!!`)
   let regex1 = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
   let [, user, repo] = args[0].match(regex1) || []
@@ -4619,7 +4619,7 @@ case 'tiktoknowm':
       fs.writeFileSync(`./${randomName}`, videoBuffer);
 
       // Send the video using gss.sendMessage with the saved video
-      await gss.sendMessage(m.chat, { video: fs.readFileSync(`./${randomName}`), mimetype: 'video/mp4', caption: 'Downloaded by gss botwa' }, { quoted: m });
+      await gss.sendMessage(m.chat, { video: fs.readFileSync(`./${randomName}`), mimetype: 'video/mp4', caption: '*🄼 GRANTED-BY-THE-MANNO-2.0*' }, { quoted: m });
 
       // Delete the temporary file
       fs.unlinkSync(`./${randomName}`);
@@ -4722,7 +4722,7 @@ case "chatgpt":
             text: data.answer,
             contextInfo: {
                 externalAdReply: {
-                    title: "GPT MANNO-2.0 3.5K",
+                    title: "GPT MANNO-2.0",
                     body: "",
                     mediaType: 1,
                     thumbnailUrl: "https://telegra.ph/file/05f8b99375cf8c851358d.jpg",
@@ -4776,7 +4776,7 @@ case "chatgpt":
                 text: data.answer,
                 contextInfo: {
                     externalAdReply: {
-                        title: "GPT MANNO-2.0 3.5K",
+                        title: "GPT MANNO-2.0",
                         body: "",
                         mediaType: 1,
                         thumbnailUrl: "https://telegra.ph/file/05f8b99375cf8c851358d.jpg",
