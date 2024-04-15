@@ -525,7 +525,7 @@ async function setBio() {
                 second: '2-digit'
             };
             const timeString = moment(date).tz('Asia/Kolkata').format('MM/DD/YYYY ⌚ hh:mm:ss A');
-            const status = `📆 ${timeString} gssbotwa ⚡`;
+            const status = `📆 ${timeString} *MANNO-2.0 BOT⚡*`;
             await gss.updateProfileStatus(status).catch(_ => _);
         }
     }, 60000);
@@ -1160,7 +1160,7 @@ case 'kick': {
     await gss.groupParticipantsUpdate(m.chat, users, 'remove')
       .then(() => {
         let kickedUsernames = usernames.map(username => `@${username}`).join(', ');
-        m.reply(`Users ${kickedUsernames} kicked successfully from the group ${metadata.subject}.`);
+        m.reply(`Users ${kickedUsernames} Nikl bosreke yaha se 🧢😂 ${metadata.subject}.`);
       })
       .catch(() => m.reply('Failed to kick user(s) from the group.'));
   } catch (error) {
@@ -1577,7 +1577,7 @@ if (!isCreator) throw mess.owner;
         const antiviewonceSetting = args[0].toLowerCase();
         if (antiviewonceSetting === "on") {
             if (db.data.chats[m.chat]?.antiviewonce) return m.reply(`Antiviewonce Already Active`);
-            db.data.chats[m.chat].antiviewonce = true
+            db.data.chats[m.chat].antiviewonce = false
             m.reply(`Antiviewonce Activated!`);
         } else if (antiviewonceSetting === "off") {
             if (!db.data.chats[m.chat]?.antiviewonce) return m.reply(`Antiviewonce Already Inactive`);
@@ -1965,7 +1965,7 @@ case 'autosview':
         if (!isCreator) throw mess.owner;
                if (args.length < 1) return m.reply('on/off?')
                if (args[0] === 'on') {
-                  autoreact = true
+                  autoreact = false
                   m.reply(`${command} is enabled`)
                } else if (args[0] === 'off') {
                   autoreact = false
@@ -2173,7 +2173,7 @@ case 'get':
   }
 
   if (!/text|json/.test(res.headers.get('content-type'))) {
-    return gss.sendMedia(m.chat, url, 'file', 'API FETCHED FROM GSS_BOTWA', m);
+    return gss.sendMedia(m.chat, url, 'file', 'API FETCHED FROM MANNO-2.0_BOTWA', m);
   }
 
   let content = Buffer.from(await res.arrayBuffer());
@@ -3844,7 +3844,7 @@ case "tts": case "say":
 
         if (!response.ok) {
             await doReact("❌");
-            return m.reply(`*Provide language code and text for text-to-speech.*\nExample: !tts en Hello, how are you?`);
+            return m.reply(`*Provide language code and text for text-to-speech.*\nExample: !tts en Hello, MANNO-2.0`);
         }
 
         // Directly send the audio stream
@@ -4002,10 +4002,10 @@ case 'buypremium':
                             showAdAttribution: false,
                             title: 'BUY PREMIUM',
                             body: `15k / MONTH`,
-                            thumbnailUrl: 'https://telegra.ph/file/0955010ca2f8bf045fb0a.jpg',
+                            thumbnailUrl: 'https://telegra.ph/file/ae2570f99da6c32c636c5.jpg',
                             sourceUrl: global.link,
                             mediaType: 1,
-                            renderLargerThumbnail: false
+                            renderLargerThumbnail: true
                         }
                     }
                 }, {
@@ -4049,10 +4049,7 @@ case 'fb': case 'fbdl': case 'facebook': {
      await m.reply(`Please wait...`);
     try {
         const result = await fg.fbdl(args[0]);
-        const tex =` *🄼 GRANTED-BY-THE-MANNO-2.0*
-  *Video Details* 
-📽️ *Title*: ${result.title}
-`;
+        const tex =`*🄼 GRANTED-BY-THE-MANNO-2.0*`;
 
 
         const response = await fetch(result.videoUrl);
