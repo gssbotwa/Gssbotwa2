@@ -5594,13 +5594,7 @@ function getRandomSymbol() {
     const randomIndex = Math.floor(Math.random() * symbols.length);
     return symbols[randomIndex];
 }
-function getRandomFontStyle() {
-  const availableFontStyles = Object.keys(menufont);
-  const randomIndex = Math.floor(Math.random() * availableFontStyles.length);
-  return availableFontStyles[randomIndex];
-}
-
-const randomSymbol = getRandomSymbol();
+	}
 
 case 'menuall':
 case 'allmenu': {
