@@ -1377,11 +1377,7 @@ case 'scriptbot':
             const releaseDate = new Date(data.created_at).toLocaleDateString('en-GB');
             const lastUpdateDate = new Date(repoInfo.lastUpdate).toLocaleDateString('en-GB');
 
-            const uy = `*GitHub Repository:* ${data.html_url}
-⭐ *Stars:* ${repoInfo.stars}
-♈ *Forks:* ${repoInfo.forks}
-📅 *Release Date:* ${releaseDate}
-🕐 *Last Update:* ${lastUpdateDate}
+            const uy = `*GitHub Repository:* WE DON'T SELL BOTA 😳🔥
 👨‍💻 *Owner:* ${repoInfo.owner}`;
 
             gss.sendPoll(m.chat, uy, ['.menu', '.ping'], {
