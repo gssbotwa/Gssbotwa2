@@ -5144,7 +5144,7 @@ case 'fancy': {
         if (isBanChat) return m.reply(mess.bangc);
     if (args.length === 0) {
         const availableStylesPreview = availableStyles.map(style => {
-            const previewText = convertToFontStyle("gss botwa", style);
+            const previewText = convertToFontStyle("GLITCH-MD", style);
             return `${style}: ${previewText}`;
         }).join('\n');
 
