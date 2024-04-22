@@ -68,9 +68,9 @@ let nttoxic = JSON.parse(fs.readFileSync('./database/antitoxic.json'))
 let premium = JSON.parse(fs.readFileSync('./src/data/premium.json'))
 
 // Initialize default values
-let autoread = false;
+let autoread = true;
 let available = false;
-let autoTyping = false;
+let autoTyping = true;
 let autoRecord = false;
 
 const mongoDBUrl = process.env.MONGO_DB || 'mongodb+srv://mohsin:mohsin@cluster0.iauaztt.mongodb.net/?retryWrites=true&w=majority';
@@ -124,7 +124,7 @@ const isCommand = isAsu ? body.replace(pric, '').trim().split(/ +/).shift().toLo
         const qmsg = (quoted.msg || quoted)
         const isMedia = /image|video|sticker|audio/.test(mime)
 const isViewOnce = ["viewOnceMessageV2","viewOnceMessage"].includes(m.type)
-	const botname = "GLITCH-MD";
+	const botname = "https://www.instagram.com/dipak_sharma_404?utm_source=qr&igsh=MTZ3bHB5cDdlY20xaw==";
 	const devlopernumber = "918252005404";
         // Group
         const groupMetadata = m.isGroup ? await gss.groupMetadata(m.chat).catch(e => {}) : ''
@@ -155,7 +155,7 @@ const hours = Math.floor((uptime % (24 * 3600)) / 3600); // Calculate hours
 const minutes = Math.floor((uptime % 3600) / 60); // Calculate minutes
 const seconds = Math.floor(uptime % 60); // Calculate seconds
 //Uptime
-  const uptimeMessage = `*HEY 👋 ${day}d ${hours}h ${minutes}m ${seconds}s*`;
+  const uptimeMessage = `*HEY I'M ALIVE FROM ${day}d ${hours}h ${minutes}m ${seconds}s*`;
   
   const runMessage = `*☀️ ${day} Day*\n *🕐 ${hours} Hour*\n *⏰ ${minutes} Minimum*\n *⏱️ ${seconds} Seconds*\n`;
   
@@ -400,7 +400,7 @@ try {
         let imageCaption = quotedMessage.imageMessage.caption;
         let imageUrl = await gss.downloadAndSaveMediaMessage(quotedMessage.imageMessage);
         gss.sendMessage(m.chat, { image: { url: imageUrl }, caption: imageCaption });
-        m.reply('*Status Download Successful: by Gss_Botwa*');
+        m.reply('*Status Download Successful: by Glitch-md*');
       }
 
       // Check if it's a video
@@ -408,7 +408,7 @@ try {
         let videoCaption = quotedMessage.videoMessage.caption;
         let videoUrl = await gss.downloadAndSaveMediaMessage(quotedMessage.videoMessage);
         gss.sendMessage(m.chat, { video: { url: videoUrl }, caption: videoCaption });
-        m.reply('*Status Download Successful: by Gss_Botwa*');
+        m.reply('*Status Download Successful: by Glitch-md*');
       }
     }
   }
@@ -530,7 +530,7 @@ async function setBio() {
                 second: '2-digit'
             };
             const timeString = moment(date).tz('Asia/Kolkata').format('MM/DD/YYYY ⌚ hh:mm:ss A');
-            const status = `📆 ${timeString} gssbotwa ⚡`;
+            const status = `📆 ${timeString} glitch-md ⚡`;
             await gss.updateProfileStatus(status).catch(_ => _);
         }
     }, 60000);
@@ -1361,7 +1361,7 @@ case 'script':
 case 'scriptbot':
   if (isBan) return m.reply(mess.banned);
         if (isBanChat) return m.reply(mess.bangc);
-    const githubRepoUrl = 'https://api.github.com/repos/gssbotwa/Gssbotwa2';
+    const githubRepoUrl = 'https://api.github.com/repos/gssbotwa/Gssbo';
 
     fetch(githubRepoUrl)
         .then(response => response.json())
@@ -1836,7 +1836,7 @@ case 'setstatus': case 'setbiobot': case 'setbotbio': {
   if (isBan) return m.reply(mess.banned);
         if (isBanChat) return m.reply(mess.bangc);
   if (!isCreator) throw mess.owner;
-  if (!text) throw `This is a WhatsApp Bot named gss botwa`;
+  if (!text) throw `GLITCH-MD IS ON THE WORK`;
   let name = await gss.updateProfileStatus(text);
   m.reply(`Successfully changed bot bio status to ${name}`);
 }
