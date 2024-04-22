@@ -70,63 +70,8 @@ mongodb+srv://mohsin:mohsin@cluster0.iauaztt.mongodb.net/?retryWrites=true&w=maj
      <br>
           <a href='https://youtu.be/NbREC9DTQcA?si=bamV9UTA5nXGwDDD' target="_blank"><img alt='Heroku Deploy Tutorial' src='https://img.shields.io/badge/-Heroku Deploy Tutorial-red?style=for-the-badge&logo=youtube&logoColor=white'/></a>
 
-#### DEPLOY TO CODESPACE
-
-1. If You don't have a account in Codespace. Create a account.
-    <br>
-<a href='https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fcodespaces' target="_blank"><img alt='Codespaces' src='https://img.shields.io/badge/CREATE-h?color=black&style=for-the-badge&logo=visualstudiocode' width="96.35" height="28"/></a></p>
-
-2. Now Deploy
-    <br>
-<a href='https://github.com/codespaces/new' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=visualstudiocode' width="96.35" height="28"/></a></p>
 
 
-#### DEPLOY TO RAILWAY
-
-1. If You don't have a account in Railway. Create a account.
-    <br>
-<a href='https://railway.app/login' target="_blank"><img alt='Railway' src='https://img.shields.io/badge/CREATE-h?color=black&style=for-the-badge&logo=railway' width="96.35" height="28"/></a></p>
-
-2. Now Deploy
-    <br>
-<a href='https://railway.app/new' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=railway' width="96.35" height="28"/></a></p>
-
-#### DEPLOY TO MONGENIUS
-
-1. If You don't have a account in Mongenius. Create a account.
-    <br>
-<a href='https://studio.mogenius.com/user/registration' target="_blank"><img alt='Mongenius' src='https://img.shields.io/badge/CREATE-h?color=black&style=for-the-badge&logo=genius' width="96.35" height="28"/></a></p>
-
-2. Now Deploy
-    <br>
-<a href='https://railway.app/new' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/DEPLOY -h?color=black&style=for-the-badge&logo=genius' width="96.35" height="28"/></a></p>
-
-
-#### DEPLOY TO REPLIT
-
-1. If You don't have a account in Replit. Create a account.
-    <br>
-<a href='https://replit.com/' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=replit&logoColor=white'/></a>
-
-2. Now Deploy
-    <br>
-<a href='https://replit.com/github/gssbotwa/Gssbotwa2' target="_blank"><img alt='Heroku' src='https://img.shields.io/badge/-Deploy-black?style=for-the-badge&logo=replit&logoColor=white'/></a>
-
----
-
-## `DEVELOPERS`
-<div align="left">
-  <a href="[https://github.com/gssbotwa]"><img src="https://github.com/gssbotwa.png" width="150" height="200" alt="Ash"/></a>
-<a href="[https://github.com/chhaseeb47]"><img src="https://github.com/chhaseeb47.png" width="200" height="200" alt="Ash"/></a>
- </div>
-<br>
-<h4 align="left">
-
-| [SIDHARTH ](https://github.com/gssbotwa) |
-| Owner, Developer, Bug Fixer, Maintainer, updates|
-
-| [ CH HASEEB ](https://github.com/chhaseeb47) |
-| CO.Devloper |
 
 
 
@@ -137,7 +82,7 @@ mongodb+srv://mohsin:mohsin@cluster0.iauaztt.mongodb.net/?retryWrites=true&w=maj
 ***Tap On Logo To Subscribe MY YouTube Channel***
 </p>
  <p align="left">
-  <a href="https://www.youtube.com/@SinghaniyaTech0744?sub_confirmation=1">
+  <a href="https://www.youtube.com/@dipak-69?sub_confirmation=1">
     <img alt=Support height="70" src="https://telegra.ph/file/eb6347e2764939fbbd35d.png"> 
   </p>
     
@@ -147,7 +92,7 @@ mongodb+srv://mohsin:mohsin@cluster0.iauaztt.mongodb.net/?retryWrites=true&w=maj
  <p align="left">
 <a href="mailto:bsid4961@gmail.com"><img title="Author" src="https://img.shields.io/badge/GMAIL-ME-black?style=for-the-badge&logo=Gmail"></a>
  <p align="left"> 
-  <a href="https://wa.me/919142294671?text=Hi+sid+Sir...+I+need+some+help+in+Gss_Botwa"><img title="Author" src="https://img.shields.io/badge/WHATSAPP-ME-red?style=for-the-badge&logo=WhatsApp"></a>
+  <a href="https://wa.me/918252005404?text=Hi+sid+Sir...+I+need+some+help+in+Gss_Botwa"><img title="Author" src="https://img.shields.io/badge/WHATSAPP-ME-red?style=for-the-badge&logo=WhatsApp"></a>
   
    
 
