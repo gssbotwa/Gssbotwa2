@@ -5565,7 +5565,10 @@ case 'bass': case 'blown': case 'deep': case 'earrape': case 'fast': case 'fat':
             console.error('Error during API request:', error);
             await doReact("❌");
             return m.reply('Unexpected error occurred during the request.');
-        }
+        }function getRandomFontStyle() {
+  const availableFontStyles = Object.keys(menufont);
+  const randomIndex = Math.floor(Math.random() * availableFontStyles.length);
+  return availableFontStyles[randomIndex];
     }
     break;
 
