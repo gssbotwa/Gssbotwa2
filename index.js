@@ -73,7 +73,7 @@ async function startgss() {
     const gss = gssConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['gss botwa Multi Device','Safari','1.0.0'],
+        browser: ['glitch Multi Device','Safari','1.0.0'],
         auth: state,
         getMessage: async (key) => {
             if (store) {
@@ -81,7 +81,7 @@ async function startgss() {
                 return msg.message || undefined
             }
             return {
-                conversation: "Hai Im gss botwa"
+                conversation: "Hi I'm Glitch-md By Dipak Sharma 💗✨🪽"
             }
         }
     })
@@ -154,7 +154,7 @@ async function getMessage(key) {
         return msg?.message;
     }
     return {
-        conversation: "Hai im gss botwa",
+        conversation: "Hi I'm Glitch-md",
     };
 }
 
@@ -208,7 +208,7 @@ gss.ev.on('group-participants.update', async (anu) => {
                     const joinDate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY');
                     const membersCount = metadata.participants.length;
 
-                    const welcomeMessage = `> Hello @${userName}! Welcome to *${metadata.subject}*.\n> You are the ${membersCount}th member.\n> Joined at: ${joinTime} on ${joinDate}`;
+                    const welcomeMessage = `> Hello 😗 @${userName}! Welcome to *${metadata.subject}*.\n> You are the ${membersCount}th member.\n> Joined at: ${joinTime} on ${joinDate}`;
 
                     gss.sendMessage(anu.id, {
                         text: welcomeMessage,
@@ -229,7 +229,7 @@ gss.ev.on('group-participants.update', async (anu) => {
                     const leaveDate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY');
                     const membersCount = metadata.participants.length;
 
-                    const leftMessage = `> Goodbye @${userName} from ${metadata.subject}.\n> We are now ${membersCount} in the group.\n> Left at: ${leaveTime} on ${leaveDate}`;
+                    const leftMessage = `> Goodbye 👋 🫂 @${userName} from ${metadata.subject}.\n> We are now ${membersCount} in the group.\n> Left at: ${leaveTime} on ${leaveDate}`;
 
                     gss.sendMessage(anu.id, {
                         text: leftMessage,
@@ -337,7 +337,7 @@ gss.ev.on('group-participants.update', async (anu) => {
         // Add your custom message when the connection is open
         console.log('Connected...', update);
         gss.sendMessage(gss.user.id, {
-            text: `*hi bro! 🫡*\n_gss botwa v2 bot has successfully connected to the server_`
+            text: `*hi Dipak! 🫡*\n_Glitch-Md is working on this number 🫂✨_`
         });
     }
 });
