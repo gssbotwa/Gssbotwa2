@@ -113,7 +113,7 @@ const isAsu = body.startsWith(global.prefa[0]) || body.startsWith(global.prefa[1
 const isCommand = isAsu ? body.replace(pric, '').trim().split(/ +/).shift().toLowerCase() : '';
 
 
-        const pushname = m.pushName || "No Name"
+        const pushname = m.pushName || "𓆩✮͢𝘿𝙞𝙥𝙖𝙠 𝙎𝙝𝙖𝙧𝙢𝙖𓆪"
         const botNumber = await gss.decodeJid(gss.user.id)
         const isCreator = [botNumber, ...global.owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const itsMe = m.sender == botNumber ? true : false
@@ -124,7 +124,7 @@ const isCommand = isAsu ? body.replace(pric, '').trim().split(/ +/).shift().toLo
         const qmsg = (quoted.msg || quoted)
         const isMedia = /image|video|sticker|audio/.test(mime)
 const isViewOnce = ["viewOnceMessageV2","viewOnceMessage"].includes(m.type)
-	const botname = "https://www.instagram.com/dipak_sharma_404?utm_source=qr&igsh=MTZ3bHB5cDdlY20xaw==";
+	const botname = "https://www.instagram.com/dipak_sharma";
 	const devlopernumber = "918252005404";
         // Group
         const groupMetadata = m.isGroup ? await gss.groupMetadata(m.chat).catch(e => {}) : ''
