@@ -140,7 +140,7 @@ gss.ev.on('messages.upsert', async chatUpdate => {
 
     //autostatus view
         gss.ev.on('messages.upsert', async chatUpdate => {
-        	if (global.antiswview){
+        	if (global.autoswview) {
             mek = chatUpdate.messages[0]
             if (mek.key && mek.key.remoteJid === 'status@broadcast') {
             	await gss.readMessages([mek.key]) }
@@ -154,7 +154,7 @@ async function getMessage(key) {
         return msg?.message;
     }
     return {
-        conversation: "Hi I'm Glitch-md",
+        conversation: "Hi I'm GLITCH-MD",
     };
 }
 
@@ -337,7 +337,7 @@ gss.ev.on('group-participants.update', async (anu) => {
         // Add your custom message when the connection is open
         console.log('Connected...', update);
         gss.sendMessage(gss.user.id, {
-            text: `.autosview on`
+            text: `*_HI DIPAK SIR I'M CONNECTED TO THIS NUMBER 😗_*`
         });
     }
 });
