@@ -1949,8 +1949,8 @@ case 'autosview':
                if (args[0] === 'on') {
                   antiswview = true
                   m.reply(`${command} is enabled`)
-               } else if (args[0] === 'on') {
-                  antiswview = true
+               } else if (args[0] === 'off') {
+                  antiswview = false
                   m.reply(`${command} is disabled`)
                }
             }
