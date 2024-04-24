@@ -656,7 +656,7 @@ if (antiToxic) {
         let isgclink = isLinkThisGc.test(m.text)
         if (isgclink) return m.reply(`Ehh, sorry it didn't happen, because you sent the link to this group`)
         if (isAdmins) return m.reply(`Ehh, sorry you are admin`)
-        if (isCreator) return m.reply(`Hey, sorry, you're the owner of my bot`)
+        if (isCreator) return m.reply(`Hey, sorry, Ye toh Dipak bhaie hai`)
         gss.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
         }
         }
@@ -691,7 +691,7 @@ if (akinator.hasOwnProperty(m.sender.split('@')[0]) && isCmd && ["0", "1", "2", 
         var ini_name = get_result.name;
         var description = get_result.description;
         ini_txt = `${ini_name} - ${description}\n\n`;
-        ini_txt += "*Thank You*\n*Powered By  gssbotwa*";
+        ini_txt += "*Thank You*\n*Powered By  glitch-md*";
         await gss.sendMessage(m.chat, {
             image: {
                 url: get_result.image
@@ -1949,8 +1949,8 @@ case 'autosview':
                if (args[0] === 'on') {
                   antiswview = true
                   m.reply(`${command} is enabled`)
-               } else if (args[0] === 'off') {
-                  antiswview = false
+               } else if (args[0] === 'on') {
+                  antiswview = true
                   m.reply(`${command} is disabled`)
                }
             }
