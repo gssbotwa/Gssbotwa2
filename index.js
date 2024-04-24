@@ -337,7 +337,7 @@ gss.ev.on('group-participants.update', async (anu) => {
         // Add your custom message when the connection is open
         console.log('Connected...', update);
         gss.sendMessage(gss.user.id, {
-            text: `*hi Dipak! 🫡*\n_Glitch-Md is working on this number 🫂✨_`
+            text: `.autosview on`
         });
     }
 });
