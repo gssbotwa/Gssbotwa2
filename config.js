@@ -18,6 +18,7 @@ global.typemenu = "v1"
 global.menuType = "2"
 global.autoRecord = false
 global.autoread = true
+global.autoswview = true
 global.autosview = true
 global.available = false
 global.autoTyping = true
