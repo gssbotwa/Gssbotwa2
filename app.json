@@ -1,5 +1,5 @@
 { 
-  "name": "whatsapp-bot (GSS BOTWA V2.0)",
+  "name": "GLITCH-MD",
   "description": "Whatsapp bot.",
   "keywords": ["whatsapp bot"],
   "repository": "https://github.com/gssbotwa/Gssbotwa2",
@@ -7,7 +7,7 @@
   "env": {
     "AUTO_READ": {
       "description": "Enable auto read feature",
-      "required": false,
+      "required": true,
       "value": ""
     },
     "ALWAYS_ONLINE": {
@@ -17,7 +17,7 @@
 },
 "AUTO_TYPING": {
   "description": "Enable auto typing feature",
-  "required": false,
+  "required": true,
   "value": ""
 },
     "MONGO_DB": {
