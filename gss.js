@@ -2047,7 +2047,7 @@ case 'remini': case 'upscale': case 'enhance': case 'hd': {
         let proses = await remini(media, "enhance");
 
         // Send the enhanced image with the new caption
-        gss.sendMessage(m.chat, { image: proses, caption: `${mess.success} enhanced by gss botwa` }, { quoted: m });
+        gss.sendMessage(m.chat, { image: proses, caption: `${mess.success} enhanced by glitch md` }, { quoted: m });
     } catch (error) {
         console.error('Error in Remini enhancement:', error);
         m.reply(`An error occurred: ${error.message}`);
@@ -2787,7 +2787,7 @@ case 'yts': case 'ytsearch': {
   if (!text) {
     return m.reply('Enter YouTube Video Link or Search Query!');
   }
-  await doReact("🕘");
+  await doReact("😎");
 
   try {
     const results = await yts(text);
